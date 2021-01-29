@@ -1,0 +1,20 @@
+.Breadcrumbs{
+    font-size: 14px;
+}
+
+.Breadcrumbs-Link{
+    color: #7d878f;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.Breadcrumbs-Link:hover{
+    color: #3174ee;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .Breadcrumbs{
+        display: none;
+    }
+}

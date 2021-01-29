@@ -1,0 +1,104 @@
+.Navigation {
+  background-color: #2c2c2c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 60px;
+  z-index: 20;
+}
+
+.Navigation-Logo {
+  margin-left: 40px;
+}
+
+.Navigation-List {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+}
+
+.Navigation-ListItem {
+  min-width: 60px;
+  margin: 0 20px;
+}
+
+.Navigation-ListItemLink {
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #aaa;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Navigation-ListItemLink:hover {
+  color: #fff;
+}
+
+.Navigation-ButtonsContainer {
+  margin-right: 30px;
+
+  display: flex;
+  align-items: center;
+}
+
+.Navigation-Button {
+  margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+  .Navigation-Logo {
+    margin-left: 20px;
+  }
+
+  .Navigation-List {
+    margin: 0;
+  }
+
+  .Navigation-ListItemLink {
+    font-size: 14px;
+  }
+
+  .Navigation-Button {
+    margin: 2px 3px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Navigation-Logo {
+    margin-left: 20px;
+    width: 100px;
+  }
+
+  .Navigation-ButtonsContainer {
+    margin-right: 3px;
+    flex-direction: column;
+  }
+
+  .Navigation-ListItem {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Navigation-Logo {
+    margin-left: 5px;
+  }
+
+  .Navigation-ListItem {
+    margin: 0 5px;
+  }
+  .Navigation-ListItemLink {
+    font-size: 12px;
+  }
+
+  .Navigation-Button {
+    width: 70px;
+  }
+}

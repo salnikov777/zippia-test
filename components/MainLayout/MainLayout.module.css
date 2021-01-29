@@ -1,0 +1,94 @@
+.MainLayout{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.MainLayout-Main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.MainLayout-Wrapper{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.MainLayout-Header{
+    width: 80%;
+
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.MainLayout-HeaderSpan{
+    text-transform: lowercase;
+    font-size: 24px;
+
+    color: lightgrey;
+}
+
+.MainLayout-SearchButtonWrapper{
+    width: 80%;
+    min-height: 100px;
+
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.MainLayout-SearchButton{
+    margin: 0 20px;
+}
+
+.MainLayout-JobsContainer{
+    margin-top: 50px;
+}
+
+
+@media (max-width: 850px) {
+    .MainLayout-Wrapper{
+        flex-direction: column;
+        min-height: 130px;
+
+    }
+
+    .MainLayout-Header{
+        font-size: 30px;
+    }
+
+    .MainLayout-HeaderSpan{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .MainLayout-Wrapper{
+        min-height: 0;
+    }
+
+    .MainLayout-Header{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .MainLayout-HeaderSpan{
+        font-size: 20px;
+    }
+}

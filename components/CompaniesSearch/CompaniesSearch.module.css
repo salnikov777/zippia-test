@@ -1,0 +1,75 @@
+.CompaniesSearch {
+  width: 100%;
+}
+
+.CompaniesSearch-Blackout {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 2;
+
+  background-color: black;
+  opacity: 0.8;
+}
+
+.CompaniesSearch-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+  width: 600px;
+  height: 300px;
+
+  border: 1px solid #000;
+  border-radius: 10px;
+
+  transform: translate(-50%, -50%);
+
+  background-color: #fff;
+}
+
+.CompaniesSearch-Input {
+  margin: 20px;
+}
+
+.CompaniesSearch-JobsList {
+  width: 90%;
+  height: 200px;
+
+  border: 1px solid #bac4da;
+  border-radius: 5px;
+  overflow-y: scroll;
+  cursor: pointer;
+
+  list-style: none;
+}
+
+.CompaniesSearch-JobsListItem {
+  width: 100%;
+  border-bottom: 1px solid #bac4da;
+  padding: 10px;
+
+  transition: all 0.2s ease-in;
+}
+
+.CompaniesSearch-JobsListItem:hover {
+  border-bottom: 1px solid #bac4da;
+  background-color: lightskyblue;
+  box-shadow: 5px 5px 5px #000;
+}
+
+@media (max-width: 700px){
+  .CompaniesSearch-Container{
+    width: 95%;
+  }
+
+  .CompaniesSearch-Input{
+    margin-top: 60px;
+  }
+}
